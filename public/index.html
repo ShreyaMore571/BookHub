@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookHub - Interactive Book Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>📚 BookHub</h1>
+        <p>Discover and review your favorite books!</p>
+    </header>
+
+    <main>
+        <section class="review-form">
+            <h2>Add Your Review</h2>
+            <form id="reviewForm">
+                <input type="text" id="book" placeholder="Book Name" required>
+                <input type="text" id="user" placeholder="Your Name" required>
+                <input type="number" id="rating" min="1" max="5" placeholder="Rating (1-5)" required>
+                <textarea id="comment" placeholder="Your Review" required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+
+        <section class="reviews">
+            <h2>All Reviews</h2>
+            <div id="reviewsContainer"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 BookHub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
